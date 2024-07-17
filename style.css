@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("dark-blue.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 190px;
+  left: 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 10px 10px 15px white;
+}
+
+#sign{
+  color: white;
+  font-family: cursive;
+  position: absolute;
+  left: 110px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#email{
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  width: 180px;
+  height: 20px;
+  background: white;
+  font-weight: bold;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  padding: 5px;
+  animation: changeColor 7s linear infinite;
+}
+
+@keyframes changeColor{
+  
+  100%{color:red;}
+  80%{color: orange;}
+  75%{color: yellow; }
+  50%{color: green; }
+  35%{color: blue; }
+  20%{color:indigo; }
+  0%{color:violet; }
+}
+
+#password{
+  
+  position: absolute;
+  top: 150px;
+  left: 60px;
+  width: 180px;
+  height: 20px;
+  background: white;
+  font-weight: bold;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  padding: 5px;
+  animation: changeColor 7s linear infinite;
+}
+
+#submitBtn{
+  
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  border: none;
+  top: 220px;
+  left: 110px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#submitBtn:hover{
+  
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 681px) and (max-width: 2000px){
+  
+.container{
+  width: 650px;
+  height: 650px;
+  position: relative;
+  top: 500px;
+  left: 170px;
+  border:none;
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  box-shadow: 30px 30px 40px white;
+}
+
+#sign{
+  
+  font-size: 70px;
+  position: absolute;
+  left: 230px;
+}
+
+#email{
+  width: 300px;
+  height: 30px;
+  top: 220px;
+  left: 190px;
+}
+
+#password{
+  width: 300px;
+  height: 30px;
+  top: 320px;
+  left: 190px;
+}
+
+#submitBtn{
+  width: 90px;
+  height: 35px;
+  top: 420px;
+  left: 300px;
+}
+
+}
